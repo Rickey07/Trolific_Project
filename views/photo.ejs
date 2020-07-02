@@ -1,0 +1,12 @@
+<h2>All Photos</h2>
+
+
+    <% if(photos !== undefined) { %>
+        <div>
+        <% photos.forEach(photo => { %>
+            <img height="150" src="<%= photo.imagePath %>" alt="">
+            <p><%= photo.name %></p>
+       <% }) %>
+    <% } %>
+
+
